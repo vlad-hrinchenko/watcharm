@@ -1,0 +1,32 @@
+.rollup {
+    position: fixed;
+    bottom: 20px;
+    right: 200px;
+    z-index: 999;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5a6cc5;
+    transition: all 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    outline: none;
+}
+.rollup.is-active {
+    opacity: 1;
+    pointer-events: auto;
+}
+.icon-arrow-up {
+  fill: white;
+}
+
+@media only screen and (min-width: 1280px) {
+    .rollup {
+        bottom: 50px;
+        left: calc(53% + (1280px / 2));
+    }
+}
+
