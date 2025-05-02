@@ -1,71 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/watcharm/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WatchCharm</title>
-    <link
-      href="./fonts/family=Gilroy:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-    />
-    <script type="module" crossorigin src="/watcharm/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/watcharm/assets/index-C3jeS2u9.css">
-  </head>
-  <body>
-    <header class="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/watcharm/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WatchCharm</title>
+  <link href="./fonts/family=Gilroy:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
+  <script type="module" crossorigin src="/watcharm/index.js"></script>
+  <link rel="modulepreload" crossorigin href="/watcharm/assets/vendor-Dp37y1uA.js">
+  <link rel="stylesheet" crossorigin href="/watcharm/assets/vendor-D_nxXpU-.css">
+  <link rel="stylesheet" crossorigin href="/watcharm/assets/index-BmSl9B7i.css">
+</head>
+
+<body>
+  <header class="header">
   <div class="container header-container">
-    <a class="link-logo-mobile border-header" href="./index.html">watchcharm</a>
+    <a class="link-logo" href="#">watchcharm</a>
+
     <nav class="header-nav">
-      <ul class="header-list">
-        <li class="list-item current"><a href="./index.html">Home</a></li>
-        <li class="list-item"><a href="#about-us">About Us</a></li>
+      <ul class="header-list" id="desktopMenu">
+        <li class="list-item current"><a href="#home">Home</a></li>
+        <li class="list-item"><a href="#about-us">About</a></li>
         <li class="list-item"><a href="#catalog">Catalog</a></li>
-        <li class="list-item"><a href="#sale">Sale</a></li>
-        <li class="list-item"><a href="#reviews">Reviews</a></li>
-        <li class="list-item"><a href="#contact-us">Contact Us</a></li>
-      </ul>
-      <ul class="social-list">
-        <li class="header-social-link">
-          <a
-            class="social-link"
-            href="https://www.facebook.com/"
-            target="_blank"
-          >
-            <svg class="social-icon" width="20" height="20">
-              <use href="/watcharm/assets/icons-E5do2jC_.svg#facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="header-social-link">
-          <a
-            class="social-link"
-            href="https://www.instagram.com/"
-            target="_blank"
-          >
-            <svg class="social-icon" width="20" height="20">
-              <use href="/watcharm/assets/icons-E5do2jC_.svg#instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="header-social-link">
-          <a
-            class="social-link"
-            href="https://www.youtube.com/"
-            target="_blank"
-          >
-            <svg class="social-icon" width="20" height="20">
-              <use href="/watcharm/assets/icons-E5do2jC_.svg#youtube"></use>
-            </svg>
-          </a>
-        </li>
+        <li class="list-item"><a href="#contact-us">Contact</a></li>
       </ul>
     </nav>
-    <button class="burger-btn" type="button" id="openMenuButton">
+
+    <button class="burger-btn" id="openMenuButton" aria-label="Open menu">
       <svg class="logo-mobile" width="34" height="34">
         <use href="/watcharm/assets/icons-E5do2jC_.svg#lines"></use>
       </svg>
@@ -74,77 +38,24 @@
 
   <div class="modal-overlay" id="modalOverlay">
     <div class="menu-mobile" id="menuMobile">
-      <button class="button" id="openModalButton"></button>
-      <button class="button close-button" id="closeModalButton"></button>
-
-      <div class="modal-menu-mobile">
-        <button
-          type="button"
-          class="menu-mobile-button-close"
-          id="closeMenuButton"
-        >
-          <svg class="close" width="34" height="34">
-            <use href="/watcharm/assets/icons-E5do2jC_.svg#close"></use>
-          </svg>
-        </button>
-        <div class="mobile-menu-list-container">
-          <ul class="mobile-menu-list">
-            <li class="menu-item menu-current">
-              <a href="./index.html">Home</a>
-            </li>
-            <li class="menu-item"><a href="#about-us">About Us</a></li>
-            <li class="menu-item"><a href="#catalog">Catalog</a></li>
-            <li class="menu-item"><a href="#sale">Sale</a></li>
-            <li class="menu-item"><a href="#reviews">Reviews</a></li>
-            <li class="menu-item"><a href="#contact-us">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="social-container">
-          <ul class="social-list-menu">
-            <li class="menu-social-link">
-              <a
-                class="menu-link"
-                href="https://www.facebook.com/"
-                target="_blank"
-              >
-                <svg class="social-icon-menu" width="20" height="20">
-                  <use href="/watcharm/assets/icons-E5do2jC_.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="menu-social-link">
-              <a
-                class="menu-link"
-                href="https://www.instagram.com/"
-                target="_blank"
-              >
-                <svg class="social-icon-menu" width="20" height="20">
-                  <use href="/watcharm/assets/icons-E5do2jC_.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="menu-social-link">
-              <a
-                class="menu-link"
-                href="https://www.youtube.com/"
-                target="_blank"
-              >
-                <svg class="social-icon-menu" width="20" height="20">
-                  <use href="/watcharm/assets/icons-E5do2jC_.svg#youtube"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <button class="menu-mobile-button-close" id="closeMenuButton" aria-label="Close menu">
+        <svg class="logo-mobile" width="34" height="34">
+          <use href="/watcharm/assets/icons-E5do2jC_.svg#close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-list" id="mobileMenu">
+        <li class="menu-item menu-current"><a href="#home">Home</a></li>
+        <li class="menu-item"><a href="#about-us">About</a></li>
+        <li class="menu-item"><a href="#catalog">Catalog</a></li>
+        <li class="menu-item"><a href="#contact-us">Contact</a></li>
+      </ul>
     </div>
   </div>
 </header>
 
-
-    <main>
-      <!-- Loads the specified .html file -->
-      <section class="hero section">
+  <main>
+    <!-- Loads the specified .html file -->
+    <section class="hero section">
   <div class="container hero-container">
     <div class="hero-content">
       <div class="hero-text">
@@ -214,7 +125,7 @@
   </div>
 </section>
 
-      <section class="about-us" id="about-us">
+    <section class="about-us" id="about-us">
   <div class="container about-us-container">
     <div class="about-us-info">
       <h2 class="about-us-title">About us</h2>
@@ -263,7 +174,7 @@
   </div>
 </section>
 
-      <section class="catalog section" id="catalog">
+    <section class="catalog section" id="catalog">
   <div class="container">
     <h2 class="catalog-title">Catalog</h2>
     <ul class="catalog-list">
@@ -370,7 +281,7 @@
   </div>
 </section>
 
-      <section class="advertisement section">
+    <section class="advertisement section">
   <div class="container">
     <h2 class="visually-hidden">Advertisement</h2>
     <div class="caption-container">
@@ -387,7 +298,7 @@
   </div>
 </section>
 
-      <section class="sale" id="sale">
+    <section class="sale" id="sale">
   <div class="container">
     <h2 class="sale-title">Sale</h2>
     <div class="sale-content">
@@ -477,7 +388,7 @@
   </div>
 </section>
 
-      <section class="reviews section" id="reviews">
+    <section class="reviews section" id="reviews">
   <div class="container">
     <h2 class="reviews-title">Reviews</h2>
     <ul class="reviews-container">
@@ -527,7 +438,7 @@
   </div>
 </section>
 
-      <section class="section contact-us" id="contact-us">
+    <section class="section contact-us" id="contact-us">
   <div class="container contact-us-container">
     <h2 class="contact-us-title">Contact US</h2>
     <div class="contact-us-maincontainer">
@@ -536,84 +447,45 @@
           Please use the form below to contact us. Enter your name, email,
           phone, and message and we'll get back to you shortly.
         </p>
-        <form class="contact-us-form">
+        <form class="contact-us-form" id="contactForm" action="https://formspree.io/f/xwpolldl" method="POST">
+
           <div class="contact-us-input">
             <label class="contact-us-label" for="name"></label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Name"
-              required
-              class="contact-us-input-style"
-            />
+            <input type="text" id="name" name="name" placeholder="Name" required class="contact-us-input-style" />
           </div>
           <div class="contact-us-input">
             <label class="contact-us-label" for="email"></label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              placeholder="Email"
-              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-              title="Please enter a valid email address."
-              class="contact-us-input-style"
-            />
+            <input type="email" id="email" name="email" required placeholder="Email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" title="Please enter a valid email address."
+              class="contact-us-input-style" />
           </div>
           <div class="contact-us-input">
             <label class="contact-us-label" for="phone"></label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              required
-              placeholder="+380"
-              pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
-              title="Please enter a valid phone number in the format +380-XX-XXX-XX-XX."
-              class="contact-us-input-style"
-            />
+            <input type="tel" id="phone" name="phone" required placeholder="+380-__-___-__-__"
+              class="contact-us-input-style" />
+
           </div>
           <div class="contact-us-input-com">
             <label class="contact-us-label" for="comment"></label>
-            <textarea
-              id="comment"
-              name="comment"
-              placeholder="Comment"
-              required
-              class="contact-us-input-style-com"
-            ></textarea>
+            <textarea id="comment" name="comment" placeholder="Comment" required
+              class="contact-us-input-style-com"></textarea>
           </div>
 
           <button type="submit" class="contact-us-bth">Send</button>
         </form>
       </div>
       <picture>
-        <source
-          media="(min-width: 1280px)"
-          srcset="/watcharm/assets/d-contact-DTTsxBcN.jpg 1x, /watcharm/assets/d-contact@2x-rXB9BLKH.jpg 2x"
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="/watcharm/assets/p-contact-DmlhkZbr.jpg 1x, /watcharm/assets/p-contact@2x-Cn-khMC3.jpg 2x"
-        />
-        <source
-          media="(max-width: 767px)"
-          srcset="/watcharm/assets/m-contact-KJ1dv3Xu.jpg 1x, /watcharm/assets/m-contact@2x-A-7idOB5.jpg 2x"
-        />
-        <img
-          class="contact-us-image"
-          src="/watcharm/assets/m-contact-KJ1dv3Xu.jpg"
-          alt="clock image"
-        />
+        <source media="(min-width: 1280px)" srcset="/watcharm/assets/d-contact-DTTsxBcN.jpg 1x, /watcharm/assets/d-contact@2x-rXB9BLKH.jpg 2x" />
+        <source media="(min-width: 768px)" srcset="/watcharm/assets/p-contact-DmlhkZbr.jpg 1x, /watcharm/assets/p-contact@2x-Cn-khMC3.jpg 2x" />
+        <source media="(max-width: 767px)" srcset="/watcharm/assets/m-contact-KJ1dv3Xu.jpg 1x, /watcharm/assets/m-contact@2x-A-7idOB5.jpg 2x" />
+        <img class="contact-us-image" src="/watcharm/assets/m-contact-KJ1dv3Xu.jpg" alt="clock image" />
       </picture>
     </div>
   </div>
 </section>
+  </main>
 
-    </main>
-
-    <footer class="container footer-page">
+  <footer class="container footer-page">
   <div id="footer" class="section footer-div">
     <div class="footer-sm-nav">
       <nav class="footer-nav-smedia">
@@ -715,6 +587,17 @@
   </div>
 </footer>
 
+  <a href="#" class="rollup" aria-label="Back to top">
+    <svg class="icon-arrow-up" width="24" height="24" viewBox="0 0 32 32" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M16 0c-8.823 0-16 7.177-16 16s7.177 16 16 16 16-7.177 16-16-7.177-16-16-16zM16 30.667c-8.087 0-14.667-6.58-14.667-14.667s6.58-14.667 14.667-14.667 14.667 6.58 14.667 14.667-6.58 14.667-14.667 14.667z" />
+        <path
+            d="M19.3 9.853c-0.264-0.264-0.667-0.633-1.091-1.008-1.259-1.116-3.157-1.113-4.416 0-0.424 0.376-0.828 0.745-1.087 1.004l-3.839 3.771c-0.263 0.257-0.267 0.68-0.008 0.943 0.257 0.263 0.68 0.265 0.944 0.008l3.843-3.775c0.249-0.249 0.631-0.597 1.032-0.953 0.197-0.175 0.421-0.299 0.657-0.381v13.872c0 0.368 0.299 0.667 0.667 0.667s0.667-0.299 0.667-0.667v-13.872c0.236 0.084 0.46 0.207 0.657 0.381 0.401 0.355 0.783 0.703 1.036 0.956l3.839 3.771c0.131 0.128 0.299 0.192 0.468 0.192 0.172 0 0.345-0.067 0.476-0.199 0.257-0.263 0.253-0.685-0.008-0.943l-3.835-3.767z" />
+    </svg>
+</a>
 
-  </body>
+
+</body>
+
 </html>
