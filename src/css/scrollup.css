@@ -1,7 +1,6 @@
 .rollup {
     position: fixed;
     bottom: 20px;
-    right: 200px;
     z-index: 999;
     border-radius: 50%;
     height: 50px;
@@ -14,27 +13,34 @@
     opacity: 0;
     pointer-events: none;
     outline: none;
+    left: auto;
+    right: 200px;
 }
+
 .rollup.is-active {
     opacity: 1;
     pointer-events: auto;
 }
+
 .icon-arrow-up {
-  fill: white;
+    fill: white;
 }
 
-@media only screen and (max-width: 1279px) {
+/* Десктоп >=1280px — праворуч */
+@media only screen and (min-width: 1280px) {
+    .rollup {
+        bottom: 50px;
+        left: calc(53% + (1280px / 2));
+        right: auto;
+        transform: none;
+    }
+}
+
+/* Мобілка < 768px — по центру */
+@media only screen and (max-width: 767px) {
     .rollup {
         left: 50%;
         right: auto;
         transform: translateX(-50%);
     }
 }
-
-@media only screen and (min-width: 1280px) {
-    .rollup {
-        bottom: 50px;
-        left: calc(53% + (1280px / 2));
-    }
-}
-
